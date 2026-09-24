@@ -1,0 +1,10 @@
+# Bỏ qua các dataset
+data/**
+*.csv
+
+# Bỏ qua file hình ảnh
+*.png
+*.jpg
+
+# Bỏ qua file môi trường ảo
+*.venv
