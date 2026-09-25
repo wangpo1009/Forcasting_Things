@@ -1,12 +1,113 @@
-# Bỏ qua các dataset
-data/**
+
+# ==========================================
+# 1. PYTHON & VIRTUAL ENVIRONMENTS
+# ==========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Môi trường ảo (Virtual environments)
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Cấu hình cài đặt & Phân phối
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# 2. DATA SCIENCE, ML & FORECASTING DATA
+# (Tránh push các dataset nhẹ/nặng hoặc file lưu model)
+# ==========================================
+# Thư mục dữ liệu
+data/
+datasets/
+raw_data/
+processed_data/
+
+# Định dạng file dữ liệu thô / lớn
 *.csv
-*.xlxs
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.jsonl
+*.zip
+*.tar.gz
+*.7z
 
+# Model Weights, Checkpoints & Serialization
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.joblib
+*.pth
+*.pt
+*.onnx
+*.bin
 
-# Bỏ qua file hình ảnh
-*.png
-*.jpg
+# ==========================================
+# 3. JUPYTER NOTEBOOKS
+# ==========================================
+# File lưu tạm và checkpoint tự động của Jupyter
+.ipynb_checkpoints
+*-checkpoint.ipynb
+.virtual_documents/
 
-# Bỏ qua file môi trường ảo
-*.venv
+# ==========================================
+# 4. IDEs & EDITORS (VS Code, PyCharm, Cursor)
+# ==========================================
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# JetBrains / PyCharm
+.idea/
+
+# Editor config & OS temp files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ==========================================
+# 5. ENVIRONMENT VARIABLES & SECRETS
+# (Bảo mật: Không bao giờ push API Keys, Password)
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ==========================================
+# 6. LOGS, TESTING & COVERAGE
+# ==========================================
+*.log
+logs/
+.pytest_cache/
+.coverage
+htmlcov/
